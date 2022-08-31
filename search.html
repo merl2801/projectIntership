@@ -12,13 +12,55 @@
 <body>
     <div class="flexbox">
         <div class="search">
-            <h1>VIET NAM TRAVEL Search</h1>
-            <h3>Click on search icon, then type your keyword.</h3>
-            <div>
-                <input type="text" placeholder="Search . . ." required>
+            <h1>VIET NAM TRAVEL</h1>
+            <div class="search-bar">
+            
+                <div id="select">
+                    <p id="selectText">All categories</p>
+                    <div class="icon">
+    
+                        <ion-icon class="icon" name="caret-down-outline"></ion-icon>
+                    </div>
+                    <ul id="list">
+                        <li class="options">All categories</li>
+                        <li class="options">About</li>
+                        <li class="options">Hotel</li>
+                        <li class="options">Tour</li>
+                        <li class="options">check-in</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search...." id="inputfield">
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        let select = document.getElementById("select");
+        let list = document.getElementById("list");
+        let selectText = document.getElementById("selectText");
+        let inputfield = document.getElementById("inputfield");
+
+        let options = document.getElementsByClassName("options");
+
+
+        select.onclick = function(){
+            list.classList.toggle("open");
+        }
+
+        for(option of options){
+            option.onclick = function(){
+                selectText.innerHTML = this.innerHTML;
+                inputfield.placeholder = "Search In " + selectText.innerHTML;
+
+            }
+        }
+
+    </script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
