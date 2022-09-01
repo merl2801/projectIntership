@@ -22,11 +22,26 @@
                         <ion-icon class="icon" name="caret-down-outline"></ion-icon>
                     </div>
                     <ul id="list">
-                        <li class="options">All</li>
-                        <li class="options">About</li>
-                        <li class="options">Hotel</li>
-                        <li class="options">Tour</li>
-                        <li class="options">check-in</li>
+                        <li>
+                            <p class="options ALL-chose">All</p>
+                        </li>
+                        <li class="place">
+                            <img src="./image/tp-hcm.jpg">
+                            <p class="options ">HO CHI MINH</p>
+                        </li>
+                       
+                        <li class="place">
+                            <img src="./image/tp-hcm.jpg">
+                            <p class="options ">HA NOI</p>
+                        </li>
+
+                        <li class="place">
+                            <img src="./image/tp-hcm.jpg">
+                            <p class="options ">CA MAU</p>
+                        </li>
+                        
+
+                        
                     </ul>
                 </div>
                 <div>
@@ -44,6 +59,7 @@
         let options = document.getElementsByClassName("options");
 
 
+
         select.onclick = function() {
             list.classList.toggle("open");
         }
@@ -55,6 +71,7 @@
 
             }
         }
+    
     </script>
 
 
