@@ -101,13 +101,13 @@ a:hover {
 /*content*/
 
 section {
-    border: solid white;
+    border: solid 3px white;
     text-align: center;
     border-radius: 10px;
 }
 
 main {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 2rem;
     max-width: 80%;
@@ -130,7 +130,6 @@ main {
 
 .sticky {
     height: 15rem;
-    width: 10rem;
     flex-grow: 1;
     flex-basis: 300px;
     position: sticky;
@@ -139,7 +138,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 15px;
     border: solid 3px rgb(244, 244, 244);
 }
 
@@ -160,10 +159,11 @@ footer img {
     }
 } */
 
-@media(max-width: 858px) {
+@media(max-width: 991px) {
     /* .banner img {
         width: 375px;
     } */
+
     .checkbtn {
         display: block;
     }
@@ -193,4 +193,9 @@ footer img {
     #check:checked~ul {
         left: 0;
     }
+
+    .sticky{
+        margin-top: 10px;
+    }
+
 }
