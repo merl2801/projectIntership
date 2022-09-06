@@ -161,9 +161,9 @@ footer img {
 } */
 
 @media(max-width: 858px) {
-    .banner img {
+    /* .banner img {
         width: 375px;
-    }
+    } */
     .checkbtn {
         display: block;
     }
