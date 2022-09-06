@@ -1,33 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-    
 }
 
-body{
-    background: url(./tour_image/BG1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-   
+body {
+    background: url(./tour_image/wave-haikei.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.banner{
+.banner {
     margin-top: 0;
 }
 
-.banner img{
-    max-width: 100%;
-    height: auto;
+.banner img {
+    width: 100%;
 }
 
+
 /* nav-menub-bar */
+
 nav {
     height: 80px;
-
 }
 
 nav a {
@@ -57,7 +55,6 @@ ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-
 }
 
 a:active,
@@ -74,23 +71,17 @@ a:hover {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-
 }
 
 #check {
     display: none;
-
 }
-
-
 
 .main_wrapper {
     width: 100%;
     height: auto;
     margin: auto;
 }
-
-
 
 .book-tour {
     background: #eee;
@@ -104,15 +95,15 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 
 /*content*/
 
-.banner,
 section {
-
+    border: solid white;
     text-align: center;
+    border-radius: 10px;
 }
 
 main {
@@ -123,11 +114,13 @@ main {
     margin: 2rem auto;
 }
 
+.banner {
+    text-align: center;
+    background-size: cover;
+}
+
 
 /* Styling grid */
-
-
-
 
 .article {
     /* background: #eee; */
@@ -146,20 +139,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10%;
+    border-radius: 10px;
     border: solid 3px rgb(244, 244, 244);
 }
 
-
-
-
-
-footer img{
-    max-width: 100%;
+footer img {
+    width: 100%;
     height: auto;
 }
-
-
 
 
 /* @media(max-width: 952px){
@@ -174,14 +161,12 @@ footer img{
 } */
 
 @media(max-width: 858px) {
-    .banner img{
+    .banner img {
         width: 375px;
     }
-
     .checkbtn {
         display: block;
     }
-
     ul {
         position: fixed;
         width: 100%;
@@ -192,29 +177,20 @@ footer img{
         text-align: center;
         transition: all 0.5s;
     }
-
     nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-
     }
-
     nav ul li a {
         font-size: 20px;
     }
-
     a:hover,
     a.active {
         background: none;
         color: #0082e6;
-
     }
-
     #check:checked~ul {
         left: 0;
-
     }
-
-
 }
