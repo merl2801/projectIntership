@@ -98,12 +98,21 @@ a:hover {
 }
 
 
+/* banner */
+
+.banner {
+    text-align: center;
+    background-size: cover;
+}
+
+
 /*content*/
 
 section {
-    border: solid 3px white;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 10px;
+    background: linear-gradient(#d7e1ec, #ffffff);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 main {
@@ -114,19 +123,44 @@ main {
     margin: 2rem auto;
 }
 
-.banner {
+section .tour {
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+}
+
+section h4 {
+    color: #fff;
+    font-family: 'Rouge Script', cursive;
+    font-size: 130px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 50px;
     text-align: center;
-    background-size: cover;
+    text-shadow: 1px 1px 2px #082b34;
+}
+
+section .tour img {
+    border-radius: 10%;
+}
+
+section .tour img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+section .tour .content p {
+    padding-left: 10px;
 }
 
 
 /* Styling grid */
 
-.article {
-    /* background: #eee; */
+
+/* .article {
     flex-grow: 999;
     flex-basis: 0;
-}
+} */
 
 .sticky {
     height: 15rem;
@@ -139,7 +173,7 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    border: solid 3px rgb(244, 244, 244);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 footer img {
@@ -163,7 +197,6 @@ footer img {
     /* .banner img {
         width: 375px;
     } */
-
     .checkbtn {
         display: block;
     }
@@ -193,9 +226,10 @@ footer img {
     #check:checked~ul {
         left: 0;
     }
-
-    .sticky{
+    section .tour {
+        flex-direction: column;
+    }
+    .sticky {
         margin-top: 10px;
     }
-
 }
