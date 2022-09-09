@@ -356,7 +356,7 @@ transform: translateY(0);
     border-radius: 100px;
     
     box-shadow: 0 0 60px rgba(0,255,203,.64);
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
