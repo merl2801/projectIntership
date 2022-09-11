@@ -6,331 +6,68 @@
 }
 
 body {
-    background: url(./BG1.jpg) no-repeat center center fixed;
+    /* background: url(./image/BG1.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-
-/* header {
-    color: white;
-    width: 100%;
-    height: 100vh;
-    background-image: url("./tour_image/vietnam.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  } */
-  
-  header .menu {
-    color: #000;
-    background-color: #fff;
-
-  }
-  
-  header .menu .text-logo {
-    font-family: "LifeLogo";
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-    position: relative;
-    
-
-  }
-  
-  header .menu ion-icon {
-    font-size: 20px;
-    color: black;
-  }
-  
-  header .menu .icon-1 {
-    position: absolute;
-    top: 5px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  
-  header .menu .icon-2 {
-    position: absolute;
-    top: 10px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  
-  header .menu .nav-item {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0px 15px 0px 15px;
-  }
-  
-  header .menu .nav-item .nav-link {
-    color: black;
-  }
-  
-  header .sns {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  
-  header .sns .line {
-    width: 2px;
-    height: 15vh;
-    background-color: white;
-    margin-left: 25px;
-  }
-  
-  header .sns .mxh {
-    margin-left: 18px;
-    color: white;
-  }
-  
-  header .sns .mxh ion-icon {
-    padding: 15px 0px 15px 0px;
-    font-size: 18px;
-  }
-
-
 .form-contact{
     background-color: #fff;
-    justify-content: center;
     padding: 5px 5px;
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    
+    margin-top: 30px;
 }
 
 .form-contact p{
     color: red;
-    text-align: center;
     font-size: large;
+    text-align: left;
+}
+
+.form-contact .write{
+  text-align: right;
+  
+}
+
+
+.form-contact .write textarea,
+.form-contact .write input{
+  width: 50%;
+}
+
+.form-contact .tick-box{
+  text-align: center;
+}
+
+.form-contact .write textarea{
+  vertical-align:top;
+}
+
+.form-contact .write label{
+  margin-right: 30px;
+}
+
+.form-contact hr{
+ 
+  margin-top: 10px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #cc0000;
 
 }
 
-.form-contact .btn{
-}
-
-/* footer img {
-    width: 100%;
-    height: auto;
-} */
-footer .logo-footer {
-    position: relative;
-    color: #fff;
+@media (max-width: 991px){
+  .form-contact .write{
+    text-align: left;
     
   }
-  
-  footer .logo-footer .text-logo-footer {
-    font-family: "LifeLogo";
-    font-size: 30px;
-    margin: 0;
-    position: relative;
-  }
-  
-  footer .logo-footer .text-logo-footer span {
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  
-  footer .logo-footer .icon-3 {
-    position: absolute;
-    left: -20px;
-    top: -5px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    font-size: 20px;
-  }
-  
-  footer .logo-footer .icon-4 {
-    position: absolute;
-    right: -20px;
-    top: 5px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    font-size: 20px;
-  }
-  
-  footer .logo-footer::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 15vw;
-    width: 30vw;
-    height: 2px;
-    background-color: #fff;
-  }
-  
-  footer .logo-footer::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    left: 15vw;
-    width: 30vw;
-    height: 2px;
-    background-color: #fff;
-  }
-  
-  footer .text-footer-left {
-    
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
 
-  footer .text-footer-left p{
-    color:#fff;
+  .form-contact .write label{
+    margin-right:0;
   }
-  
-
-
-  footer .text-footer-right {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  .form-contact .write textarea,
+  .form-contact .write input{
+    float: right;
   }
-
-  footer .text-footer-right p{
-    color: #fff;
-  }
-  
-  footer .text-footer-center {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-
-  footer .text-footer-center p{
-    color: #fff;
-  }
-  
-  footer .text-footer-center .sns-footer ion-icon {
-    padding: 15px;
-    font-size: 35px;
-    color: #fff;
-  }
-  
-  footer .text-footer-center .line {
-    width: 2px;
-    height: 10vh;
-    background-color: #fff;
-  }
-  
-  footer .text-footer-center table {
-    width: 80%;
-  }
-  
-  footer .text-footer-center table tr {
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  
-  footer .text-footer-center table tr td {
-    padding: 15px 0px;
-  }
-  
-  footer .text-footer-center .ion-ft {
-    font-size: 25px;
-  }
-
-  footer .text-footer-center .last-footer{
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 992px) {
-    .sokai-content {
-      -webkit-column-count: 3 !important;
-              column-count: 3 !important;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .sokai-content {
-      -webkit-column-count: 2 !important;
-              column-count: 2 !important;
-    }
-    footer .text-footer-right {
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-    }
-    footer .text-footer-center {
-      -webkit-box-ordinal-group: 4;
-          -ms-flex-order: 3;
-              order: 3;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .sokai-content {
-      -webkit-column-count: 1 !important;
-              column-count: 1 !important;
-    }
-  }
-  
-  
-  
-  
-
-
-/* @media(max-width: 952px){
-    .logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a{
-        font-size: 16px;
-    }
-} */
-
-@media(max-width: 991px) {
-    /* .banner img {
-        width: 375px;
-    } */
-    .checkbtn {
-        display: block;
-    }
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover,
-    a.active {
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked~ul {
-        left: 0;
-    }
-    section .tour {
-        flex-direction: column;
-    }
-    .sticky {
-        margin-top: 10px;
-    }
 }
