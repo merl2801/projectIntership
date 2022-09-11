@@ -135,11 +135,11 @@ hr{
     font-family: cursive;
 }
 
-.about-text h3{
+.about-text h4{
     font-size: 30px;
     color: #fff;
 }
-.about-text p{
+.about-text {
     font-size: 18px;
     color: #fff;
 
@@ -299,6 +299,18 @@ footer p{
     header .logo{
         position: absolute;
         bottom: 6px;
+    }
+
+    .about-text h2{
+    color: #fff;
+    font-family: lobster;
+    font-size: 30px;
+    font-family: cursive;
+    padding-top: 5px;
+}
+    .about-text h4{
+        color: #fff;
+        font-size: 20px;
     }
 
 
